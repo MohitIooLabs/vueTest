@@ -55,7 +55,7 @@ export default {
   },
   methods: {
     async addItem() {
-      const response = await axios.post("http://localhost:3000/api/bucketListItems/", {
+      const response = await axios.post("/api/bucketListItems/", {
         description: this.description
       });
       this.items.push(response.data);
