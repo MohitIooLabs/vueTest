@@ -1,7 +1,6 @@
 {
   "name": "vueTask",
   "version": "1.0.0",
-  "description": "",
   "main": "server.js",
   "scripts": {
     "server": "nodemon server.js --ignore 'client/'",
@@ -23,5 +22,6 @@
   "devDependencies": {
     "concurrently": "^6.0.0",
     "nodemon": "^2.0.7"
-  }
+  },
+  "description": ""
 }
