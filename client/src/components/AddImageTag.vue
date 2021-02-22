@@ -88,7 +88,7 @@ export default {
       if (this.$refs.form.validate() === true) {
         this.showLoading = true;
         const response = await axios.post(
-          "/api/bucketListItems/",
+          "http://localhost:3000/api/bucketListItems/",
           {
             description: this.tags,
             imgUrl: this.image,

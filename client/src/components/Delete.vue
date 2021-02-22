@@ -49,7 +49,7 @@ export default {
     async removeItem(item, i) {
       this.showLoading = true;
       const response = await axios.delete(
-        "/api/bucketListItems/" + this.itemId,
+        "http://localhost:3000/api/bucketListItems/" + this.itemId,
         this.deleteDialog = false,
       );
       this.items.splice(i, 1);

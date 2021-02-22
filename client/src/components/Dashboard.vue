@@ -139,7 +139,7 @@ import DeleteImageTag from "./Delete.vue";
 import Loader from "../components/Loader.vue";
 import { bus } from "../main";
 export default {
-  name: "HelloWorld",
+  name: "Dashboard",
   components: {
     AddImageTag,
     DeleteImageTag,
@@ -181,7 +181,7 @@ export default {
     async getImgListData() {
       this.showLoading = true;
       const response = await axios.get(
-        "/api/bucketListItems/"
+        "http://localhost:3000/api/bucketListItems/"
       );
       if (response.status === 200) {
         this.showLoading = false;
