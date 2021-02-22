@@ -21,7 +21,7 @@
               prepend-inner-icon="mdi-magnify"
               label="Search"
             ></v-text-field>
-            <template v-if="$vuetify.breakpoint.mdAndUp">
+            <template>
               <v-spacer></v-spacer>
               <v-btn depressed color="primary" @click="addImageTag()">
                 Add Image Tag
